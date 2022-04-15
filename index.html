@@ -23,7 +23,7 @@
 
 <body>
 
-  <section id="title">
+  <section class="colored-section" id="title">
     <div class="container-fluid">
 
       <!-- Nav Bar -->
@@ -34,15 +34,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Pricing</a>
+              <a class="nav-link" href="#cta">Download</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Download</a>
+              <a class="nav-link" href="#footer">Contact</a>
             </li>
           </ul>
         </div>
@@ -52,9 +52,9 @@
 
       <!-- Title -->
       <div class="row">
-        <div class="col-lg-6">
+        <div class="title-column1 col-lg-6">
           <div>
-            <h1>Travel the galaxy...in style!</h1>
+            <h1 class="big-heading">Travel the galaxy...in style!</h1>
             <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
             <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>
           </div>
@@ -73,21 +73,21 @@
 
   <!-- Features -->
 
-  <section id="features">
+  <section class="white-section" id="features">
     <div class="row">
       <div class="col-lg-4 features-item">
         <i class="icon fa-solid fa-earth-americas fa-4x"></i>
-        <h3>Great Tour Packages</h3>
+        <h3 class="feature-title">Great Tour Packages</h3>
         <p>See sights that are out of this world! <em>Literally</em>!</p>
       </div>
       <div class="col-lg-4 features-item">
         <i class="icon fa-solid fa-people-group fa-4x"></i>
-        <h3>Open Clientele</h3>
+        <h3 class="feature-title">Open Clientele</h3>
         <p>Our company caters to all walks of primitive lifeforms!</p>
       </div>
       <div class="col-lg-4 features-item">
         <i class="icon fa-solid fa-circle-check fa-4x"></i>
-        <h3>Guaranteed Probing</h3>
+        <h3 class="feature-title">Guaranteed Probing</h3>
         <p>If you leave unsatisfied we give you the probing you deserve AND your money back!</p>
       </div>
     </div>
@@ -96,22 +96,36 @@
 
   <!-- Testimonials -->
 
-  <section id="testimonials">
+  <section class="colored-section" id="testimonials">
 
-    <h2>The trip to Alpha Centauri was <em>STELLAR</em>! Completely relaxing getaway for me and the family!</h2>
-    <img class="testimonial-image" src="images/naut-in-field.png" alt="astronaut in a field">
-    <em>Chuck, Nevada</em>
-
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
-
+    <div id="testamonial-carousel" class="carousel slide" data-bs-interval="false" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="testimonial-text">The trip to Alpha Centauri was <em>STELLAR</em>! Affordable and completely relaxing vacation!</h2>
+          <img class="testimonial-image" src="images/naut-in-field.png" alt="astronaut in a field">
+          <em>Chuck, Nevada</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Our family had so much fun! There was never a dull moment, you come away sore from all the fun you have!</h2>
+          <img class="testimonial-image" src="images/family.png" alt="family on the beach">
+          <em>The Jones', Illinois</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testamonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testamonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </section>
 
 
   <!-- Press -->
 
-  <section id="press">
+  <section class="colored-section" id="press">
     <img class="press-image" src="images/techcrunch.png" alt="tc-logo">
     <img class="press-image" src="images/tnw.png" alt="tnw-logo">
     <img class="press-image" src="images/bizinsider.png" alt="biz-insider-logo">
@@ -122,54 +136,77 @@
 
   <!-- Pricing -->
 
-  <section id="pricing">
+  <section class="white-section" id="pricing">
 
-    <h2>A Plan for Everyone!</h2>
+    <h2 class="pricing-heading">A Plan for Everyone!</h2>
     <p>Simple and affordable price plans for you and your loved ones.</p>
 
-
-    <h3>Standard</h3>
-    <h2>$25 / mo</h2>
-    <p>5 Stops Per Day</p>
-    <p>10 Photo Ops Per Day</p>
-    <p>Unlimited UFO Access</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Premium</h3>
-    <h2>$49 / mo</h2>
-    <p>Standard Package +</p>
-    <p>1 Probing from the Overlords</p>
-    <p>5 Brain Washing Slugs to take home</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Out of this World</h3>
-    <h2>$99 / mo</h2>
-    <p>Premium Package +</p>
-    <p>Unlimited Probings from the Overlords</p>
-    <p>10 Brain Washing Slugs</p>
-    <p>Automatic Placement within pet heirarchy when the Overlords take over Earth! <em><b>WOW!</b></em></p>
-    <button type="button">Sign Up</button>
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Standard</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-month">$25 / mo</h2>
+            <p>5 Stops Per Day</p>
+            <p>10 Photo Ops Per Day</p>
+            <p>Unlimited UFO Access</p>
+            <button type="button" class="w-100 btn btn-outline-dark">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Premium</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-month">$49 / mo</h2>
+            <p>Standard Package +</p>
+            <p>1 Probing from the Overlords</p>
+            <p>5 Brain Washing Slugs to take home</p>
+            <button type="button" class="w-100 btn btn-dark">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Out of this World</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-month">$99 / mo</h2>
+            <p>Premium Package +</p>
+            <p>Unlimited Probings from the Overlords</p>
+            <p>Automatic Placement within pet heirarchy when the Overlords take over Earth! <em><b>WOW!</b></em></p>
+            <button type="button" class="w-100 btn btn-dark">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </section>
 
 
   <!-- Call to Action -->
 
-  <section id="cta">
+  <section class="colored-section" id="cta">
 
-    <h3>Take a leap and see the known Universe Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <h3 class="big-heading">Take a leap and see the known Universe Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>
 
   </section>
 
 
   <!-- Footer -->
 
-  <footer id="footer">
-
+  <footer class="white-section" id="footer">
+    <i class="fa-brands fa-twitter footer-icon"></i>
+    <i class="fa-brands fa-facebook-f footer-icon"></i>
+    <i class="fa-brands fa-instagram footer-icon"></i>
+    <i class="fa-solid fa-envelope footer-icon"></i>
     <p>© Copyright 2022 UFO Tour Co.</p>
 
   </footer>
